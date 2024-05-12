@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0c0b09; /* Dark background color */
+    color: #cda45e; /* Heading and outline color */
+    overflow: hidden; /* Hide overflowing blur effect */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.3); /* Transparent white */
+    padding: 40px; /* Increased padding for side spaces */
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* White shadow for better contrast */
+    width: 400px; /* Increased width */
+    position: relative; /* Added to allow absolute positioning inside the form */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Lighter background on hover */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2); /* Increased shadow on hover */
+}
+
+input[type="text"],
+input[type="password"],
+.button-link {
+    width: calc(100% - 22px); /* Subtracting the width of the border */
+    padding: 15px; /* Increased padding */
+    margin-bottom: 20px; /* Increased margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    outline: none; /* Remove outline */
+    font-size: 1em; /* Normal font size */
+    background-color: #f5f5f5; /* Light background color for inputs */
+}
+
+.button-link {
+    background-color: #cda45e; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer;
+    font-weight: bold; /* Bold text */
+    letter-spacing: 1px; /* Increased letter spacing */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.button-link:hover {
+    background-color: #b28e4a; /* Button background color on hover */
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px; /* Increased margin for better separation */
+}
+
+.login-link a {
+    color: #cda45e;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.login-link a,
+.login-link span {
+    display: block;
+}

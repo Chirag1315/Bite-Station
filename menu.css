@@ -1,0 +1,57 @@
+.menu {
+    color: #cda45e;
+    text-align: center;
+    font-size: 80px;
+    font-family: "Playfair Display", serif;
+}
+body {
+    background-color: #0c0b09;
+    font-family: "Open Sans", sans-serif;
+}
+.menu-container {
+    background-color: #1a1814;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.menu-header {
+    background-color: #cda45e;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+.menu-item {
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+.menu-item h2 {
+    font-size: 35px;
+    color: #cda45e;
+}
+.menu-item p {
+    font-size: 30px;
+    color: whitesmoke;
+    display: inline; /* Display inline to align prices with the item names */
+}
+.add-to-cart {
+    float: right;
+    color: #cda45e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.add-to-cart:hover {
+    color: #b28e4a; /* Change color on hover */
+}
+.menuu {
+    color: #fff;
+}
+.menuu{
+    font-size: large;
+}

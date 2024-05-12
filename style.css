@@ -1,0 +1,496 @@
+
+body {
+    background: #0c0b09;
+    color: #fff;
+  }
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+
+
+/* Navigation Bar */
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+/* Navigation Bar: Logo and Image */
+
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+
+/* Navigation Bar: List Styling */
+
+
+#navbar ul{
+  
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+#navbar ul li{ 
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration:none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: #cda45e;
+}
+
+
+
+/* Home Section */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    /* background: url('img/burger.jpg') no-repeat center center/cover;
+    height: 642px; */
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+
+    background-image: url("img/burger.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+.home-heading2{
+    color: #cda45e;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+}
+
+
+/* Services Section */
+
+#services-container > h1{
+    color: black;
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+.box > h2{
+    color: #cda45e;
+}
+
+.box > p{
+    color: #aaaaaa;
+}
+
+#services-container{
+
+    background-image: url("img/home.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+    
+    
+    
+}
+#services .box{ 
+    border: 2px solid #cda45e;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #1a1814;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: "Open Sans", sans-serif;
+
+} 
+
+/* Clients Section */
+
+
+/* #client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ 
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+
+ background-image: url("img/bg.jpg");
+
+  Create the parallax scrolling effect
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+} */
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+#contact{
+padding-top: 4%;
+padding-left: 5%;
+padding-right: 5%;
+padding-bottom: 4%;
+}
+.section-title{
+  padding-bottom: 3%;
+}
+
+.contact .info {
+    width: 100%;
+  }
+  
+  .contact .info i {
+    font-size: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+  }
+  
+  .contact .info .open-hours, .contact .info .email, .contact .info .phone {
+    margin-top: 40px;
+  }
+  
+  .contact {
+    width: 100%;
+  }
+  
+  .contact   {
+    padding-bottom: 8px;
+  }
+  
+  .contact .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+
+  }
+
+  .col-lg-8{
+    padding: 5% 3% 3% 30%;
+  }
+  
+
+  
+
+  
+  
+
+
+
+
+/* Utility Classes */
+
+
+.h-primary{
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    
+}
+
+.h-secondary{
+    font-family:"Playfair Display", serif;
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+
+.btn{
+ 
+  margin: 0 0 0 15px;
+  border: 2px solid #cda45e;
+  color: white;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 8px 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  
+}
+.btn:hover{
+    background-color: #cda45e;
+
+}
+.center{
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about { 
+    background: url("img/NEWIMG.jpg") center center;
+
+    background-size: cover;
+    position: relative;
+    padding: 80px 0;
+    background-color: #1a1814;
+
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 4%;
+
+    /* background-image: url("img/") ; */
+
+    /* Full height   */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1{
+    color: #cda45e;
+    font-size: xx-large; 
+    font-weight: 700;
+    font-family:"Playfair Display", serif ;
+  }
+  .p-about{
+    padding-top: 1%;
+    color: #aaaaaa;
+    font-family:"Open Sans", sans-serif;
+  }
+  .about0 li{
+    font-size: larger;
+  
+    font-weight: 200;
+  }
+  
+  
+ 
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+
+.why-us > .row {
+    padding-top: 2%;
+}
+.why-us{
+    background-color:#0c0b09;
+}
+.container2{
+   
+padding-top: 4%;
+padding-left: 5%;
+padding-right: 5%;
+padding-bottom: 4%;
+}
+
+
+.section-title> h2 {
+    color: #aaaaaa;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+}
+
+.section-title > p{
+
+    font-size: xx-large;
+    color: #cda45e;
+    font-weight: 700;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    /* margin:%; */
+
+}
+.row > div{
+    margin: 1%;
+}
+.why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    background: #1a1814;
+  }
+  
+  .why-us .box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #cda45e;
+  }
+  
+  .why-us .box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .why-us .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .why-us .box:hover {
+    background: #cda45e;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+  
+  .why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+    color: #fff;
+  }
+
+  footer{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
